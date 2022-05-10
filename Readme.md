@@ -6,9 +6,17 @@ echo Parte4 *********************************************************
 
 1. Menciona los 3 tipos de merge
 
+  merge normal
+  merge recursivo 
+  merge fastforward
+
 2. para que sirve el alias?
 
+  Para guardar un comando en un alias y si deseas utilizarlo puedes hacerlo desde el alias
+
 3. cual es el comando para crear ramas y movernos a ellas en una sola linea?
+
+  git checkout -b
 
 3. Cual es la diferencia entre git y github
 
