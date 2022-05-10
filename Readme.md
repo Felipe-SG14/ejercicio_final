@@ -36,17 +36,29 @@ echo Parte3 ***************************************************
 Contesta las siguientes preguntas
 
 1. Que es SCRUM?
+   Es un marco de trabajo para desarrollo de proyectos utilizando una metodología ágil. Con el fin de llevar acano un proceso organizado, con objetivos claros y un buen desarrollo de trabajo en equipo para desarrollar un producto. 
+
 
 2. Cual Rol dentro de SCRUM te llama mas la atención y porque?
 
+  El rol que más me llama la atención es en área de Developers porque me gusta mucho programar y desarrollar.
+
 3. Cual es la herramienta que mas recuerdas de SCRUM?
+
+  La herramienta que más recuerdo es el Producto Backlog que es la lista de tareas para el desarrollo de un producto.
 
 4. Cual es la diferencia entre el PO y el SCRUM MASTER?
 
+  El PO es el que se encarga de lidiar con los StackHolders.
+  El Scrum Master es el que se encarga de volver al equipo de desarollo un equipo autónomo.
+
 5. Cuanto puede durar un Sprint?
+
+  Mínimo dura dos semánas pero se puede extender hasta tres semanas
 
 6. Consideras que la junta de retrospectiva es importante? porque?
 
+  Si, porque sirve para dar seguimiento al proyecto de manera adecuada y consistente.
 
 Cuando termines haz un merge de personal info a este branch
 de tal suerte que este archivo debe contener la Parte 2 y 3 juntas 
