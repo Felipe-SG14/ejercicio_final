@@ -1,34 +1,27 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-Parte 4
-
+Parte 2
 Escribe en la terminal
 
-echo Parte4 *********************************************************
+echo Parte2 ***************************************
 
-1. Menciona los 3 tipos de merge
+A través de la consola genera un archivo llamado
+@tu_nombre.md
 
-  merge normal
-  merge recursivo 
-  merge fastforward
+@tu_nombre es tu nombre obviamente :D
 
-2. para que sirve el alias?
+haz un commit
 
-  Para guardar un comando en un alias y si deseas utilizarlo puedes hacerlo desde el alias
+Añade tu nombre completo dentro del contenido
 
-3. cual es el comando para crear ramas y movernos a ellas en una sola linea?
+haz un commit
 
-  git checkout -b
+Añade un grupo de música que me recomiendes
+yo te recomiendo un grupo llamado CHVRCHES
 
-3. Cual es la diferencia entre git y github
+haz un commit
 
-4. Que has entendido por devops?
+Añade una serie de netflix que me recomiendes
+yo te recomiendo "my name" (es coreana)
 
-5. Haz un rebase de la rama SCRUM a esta rama
-de tal suerte que tendras la parte 2 3 y 4 en este documento
-
-Cuando termines muevete a la rama Android
-=======
 Parte 3
 Escribe en la terminal 
 
@@ -64,33 +57,32 @@ Contesta las siguientes preguntas
 Cuando termines haz un merge de personal info a este branch
 de tal suerte que este archivo debe contener la Parte 2 y 3 juntas 
 Muevete a la rama git_github
->>>>>>> f86347f (fix ins)
 
-=======
-Parte 2
+Parte 4
+
 Escribe en la terminal
 
-echo Parte2 ***************************************
+echo Parte4 *********************************************************
 
-A través de la consola genera un archivo llamado
-@tu_nombre.md
+1. Menciona los 3 tipos de merge
 
-@tu_nombre es tu nombre obviamente :D
+  merge normal
+  merge recursivo 
+  merge fastforward
 
-haz un commit
+2. para que sirve el alias?
 
-Añade tu nombre completo dentro del contenido
+  Para guardar un comando en un alias y si deseas utilizarlo puedes hacerlo desde el alias
 
-haz un commit
+3. cual es el comando para crear ramas y movernos a ellas en una sola linea?
 
-Añade un grupo de música que me recomiendes
-yo te recomiendo un grupo llamado CHVRCHES
+  git checkout -b
 
-haz un commit
+3. Cual es la diferencia entre git y github
 
-Añade una serie de netflix que me recomiendes
-yo te recomiendo "my name" (es coreana)
+4. Que has entendido por devops?
 
+5. Haz un rebase de la rama SCRUM a esta rama
+de tal suerte que tendras la parte 2 3 y 4 en este documento
 
-muevete a la rama SCRUM
->>>>>>> 201af0f (fix ins)
+Cuando termines muevete a la rama Android
