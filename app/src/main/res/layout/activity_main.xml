@@ -146,5 +146,14 @@
         android:onClick="iniciar"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Enviar"
+        android:backgroundTint="@color/black"
+        android:onClick="send_data_to_server"
+        />
+
 
 </TableLayout>

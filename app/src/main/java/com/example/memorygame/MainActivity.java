@@ -9,6 +9,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.Random;
 
@@ -33,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
     public int contador_secuencia;
     public int contador_meta;
-
+    public int puntuacion;
     public Button azul_Button;
     public Button verde_Button;
     public Button rojo_Button;
     public Button amarillo_Button;
-
+    public int idContador = 0;
     public int[] secuencia;
     public TextView[] colores;
 
@@ -172,6 +179,7 @@ public class MainActivity extends AppCompatActivity {
             if(contador_secuencia == 9 && contador_meta == 10)
             {
                 ganar_perder("Ganaste");
+                puntuacion++;
             }
         }
         else
@@ -203,4 +211,38 @@ public class MainActivity extends AppCompatActivity {
     public void amarillo_press(View view) {
         boton(ContextCompat.getColor(this, R.color.yellow));
     }
+
+    public void send_data_to_server(View view)
+    {
+        dataUsingVolley();
+    }
+
+    //Send data
+    public void dataUsingVolley() throws JSONException {
+        String url = "https://felipedevopsp2.000webhostapp.com/archivo.php";
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("ID",Integer.toString(idContador));
+        jsonObject.put("Puntuacion",Integer.toString(puntuacion));
+        jsonObject.put("Nombre","Felipe_DevOps");
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, jsonObject,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Toast response_toast = Toast.makeText(getApplicationContext(), "e " + response.toString(), Toast.LENGTH_LONG);
+                        response_toast.show();
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast response_toast = Toast.makeText(getApplicationContext(), "e " + error.getMessage(), Toast.LENGTH_LONG);
+                response_toast.show();
+            }
+        });
+
+        requestQueue.add(jsonObjectRequest);
+        idContador++;
+    }
+
 }
